@@ -252,7 +252,7 @@ h3 {
 }
 
 .steps-box:last-child {
-    margin-top: 55px;
+    margin-top: 80px;
 }
 
 .app-screen {
@@ -264,7 +264,7 @@ h3 {
 }
 
 .works-step:last-of-type {
-    margin-bottom: 50px
+    margin-bottom: 80px
 }
 
 .works-step div {
@@ -282,7 +282,7 @@ h3 {
 }
 
 .btn-app:link,
-.btn-app:visited,{
+.btn-app:visited {
     border: 0;
 }
 
@@ -353,14 +353,57 @@ cite img {
     vertical-align: middle;
 }
 
+.section-plans {
+    background-color: #f4f4f4;
+}
 
+.plan-box {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #efefef;
+}
 
+.plan-box div:first-child {
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
 
+.plan-box div:last-child {
+    text-align: center;
+    border: 0;
+}
 
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
 
+.plan-price {
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #3498db;
+}
 
+.plan-price span {
+    font-size: 35%;
+    font-weight: 300;
+}
 
+.plan-price-course {
+    font-size: 80%;
+}
 
+.plan-box ul {
+    list-style: none;
+}
+
+.plan-box ul li {
+    padding: 5px 0;
+}
 
 
 
