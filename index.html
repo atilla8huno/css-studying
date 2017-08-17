@@ -20,23 +20,26 @@
 
     <body>
         <header>
-            <nav class="row">
-                <img src="resources/img/logo.png" alt="DevSchool Logo" class="logo">
-                <ul class="main-nav">
-                    <li><a href="#">Trilha frontend</a></li>
-                    <li><a href="#">Trilha backend</a></li>
-                    <li><a href="#">Trilha infraestrutura</a></li>
-                    <li><a href="#">Trilha DevOps</a></li>
-                </ul>
+            <nav>
+                <div class="row">
+                    <img src="resources/img/logo.png" alt="DevSchool Logo" class="logo">
+                    <img src="resources/img/logo.png" alt="DevSchool Logo" class="logo-black">
+                    <ul class="main-nav">
+                        <li><a href="#features">Trilha frontend</a></li>
+                        <li><a href="#courses">Trilha backend</a></li>
+                        <li><a href="#steps">Trilha infraestrutura</a></li>
+                        <li><a href="#plans">Trilha DevOps</a></li>
+                    </ul>
+                </div>
             </nav>
             <div class="hero-text-box">
                 <h1>Goodbye long reading. <br>Hello practical courses.</h1>
-                <a class="btn btn-primary" href="#">Start learning</a>
-                <a class="btn btn-default" href="#">Show me more</a>
+                <a class="btn btn-primary btn-plans" href="#">Start learning</a>
+                <a class="btn btn-default btn-how-to-start" href="#">Show me more</a>
             </div>
         </header>
 
-        <section class="section-features">
+        <section class="section-features" id="features">
             <div class="row">
                 <h2>Some main title here</h2>
                 <p class="long-copy">Some description with a lot of words here. Some description with a lot of words here. Some description with a lot of words here. Some description with a lot of words here. </p>
@@ -69,7 +72,7 @@
             </div>
         </section>
 
-        <section class="section-courses">
+        <section class="section-courses" id="courses">
             <ul class="courses-showcase clearfix">
                 <li>
                     <figure class="course-photo">
@@ -116,7 +119,7 @@
             </ul>
         </section>
 
-        <section class="section-steps">
+        <section class="section-steps" id="steps">
             <div class="row">
                 <h2>How it works &mdash; Simple as 1, 2, 3</h2>
             </div>
@@ -145,7 +148,7 @@
             </div>
         </section>
 
-        <section class="section-cities">
+        <section class="section-cities" id="cities">
             <div class="row">
                 <h2>We're currently in these cities</h2>
             </div>
@@ -225,7 +228,7 @@
             </div>
         </section>
         
-        <section class="section-comments ">
+        <section class="section-comments" id="comments">
             <div class="row">
                 <h2>Our customers can't live without us</h2>
             </div>
@@ -252,7 +255,7 @@
             </div>
         </section>
         
-        <section class="section-plans">
+        <section class="section-plans" id="plans">
             <div class="row">
                 <h2>Start studying right now</h2>
             </div>
@@ -321,7 +324,7 @@
             </div>
         </section>
         
-        <section class="section-form">
+        <section class="section-form" id="form">
             <div class="row">
                 <h2>We're happy to hear from you</h2>
             </div>
@@ -412,9 +415,14 @@
                 </p>
             </div>
         </footer>
-    </body>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     
-    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
-    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+        <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+        <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
+        
+        <script src="resources/js/scripts.js"></script>
+    </body>
 </html>
