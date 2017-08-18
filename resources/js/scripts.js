@@ -2,6 +2,7 @@ $(function () {
     showOrHideMenu();
     configClickHandlers();
     addAnimations();
+    addNavigation();
     
     function configClickHandlers() {
         $('.btn-features').on('click', goTo('.section-features'));
@@ -52,5 +53,22 @@ $(function () {
         $('.slide-in-up-animation').waypoint(function() {
             $('.slide-in-up-animation').addClass('animated slideInUp');
         }, offset);
+    }
+    
+    function addNavigation() {
+        $('.mobile-nav-icon').on('click', function() {
+            var nav = $('.main-nav'),
+                icon = $('.mobile-nav-icon i');
+            
+            nav.slideToggle(200);
+            
+            if (icon.hasClass('ion-navicon-round')) {
+                icon.addClass('ion-close-round');
+                icon.removeClass('ion-navicon-round');
+            } else {
+                icon.removeClass('ion-close-round');
+                icon.addClass('ion-navicon-round');
+            }
+        });
     }
 });
