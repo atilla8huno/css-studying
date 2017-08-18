@@ -97,6 +97,7 @@ h3 {
     width: auto;
     float: left;
     margin: 5px 0;
+    cursor: pointer;
 }
 
 .logo {

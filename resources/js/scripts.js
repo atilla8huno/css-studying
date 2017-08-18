@@ -1,59 +1,33 @@
 $(function () {
-    $('.section-features').waypoint(function (direction) {
-        if ('down' === direction) {
-            $('nav').addClass('sticky');
-        } else {
-            $('nav').removeClass('sticky');
+    showOrHideMenu();
+    configClickHandlers();
+    
+    function configClickHandlers() {
+        $('.btn-features').on('click', goTo('.section-features'));
+        $('.btn-plans').on('click', goTo('.section-plans'));
+        $('.btn-courses').on('click', goTo('#courses'));
+        $('.btn-steps').on('click', goTo('#steps'));
+
+        $('.logo-black').on('click', goTo('header'));
+    }
+    
+    function goTo(selector) {
+        return function() {
+            $('html, body').animate({
+                scrollTop: $(selector).offset().top
+            }, 1000);
         }
-    }, {
-        offset: '60px'
-    });
-
-    $('.btn-how-to-start').on('click', function () {
-        $('html, body').animate({
-            scrollTop: $('.section-features').offset().top
-        }, 1000);
-    });
-
-    $('.btn-plans').on('click', function () {
-        $('html, body').animate({
-            scrollTop: $('.section-plans').offset().top
-        }, 1000);
-    });
-
-    // Select all links with hashes
-    $('a[href*="#"]')
-        // Remove links that don't actually link to anything
-        .not('[href="#"]')
-        .not('[href="#0"]')
-        .click(function (event) {
-            // On-page links
-            if (
-                location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
-                location.hostname == this.hostname
-            ) {
-                // Figure out element to scroll to
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                // Does a scroll target exist?
-                if (target.length) {
-                    // Only prevent default if animation is actually gonna happen
-                    event.preventDefault();
-                    $('html, body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000, function () {
-                        // Callback after animation
-                        // Must change focus!
-                        var $target = $(target);
-                        $target.focus();
-                        if ($target.is(":focus")) { // Checking if the target was focused
-                            return false;
-                        } else {
-                            $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-                            $target.focus(); // Set focus again
-                        };
-                    });
-                }
+    }
+    
+    function showOrHideMenu() {
+        $('.section-features').waypoint(function (direction) {
+            if ('down' === direction) {
+                $('nav').addClass('sticky');
+            } else {
+                $('nav').removeClass('sticky');
             }
+        }, {
+            offset: '60px'
         });
+    };
 });
