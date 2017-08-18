@@ -1,6 +1,7 @@
 $(function () {
     showOrHideMenu();
     configClickHandlers();
+    addAnimations();
     
     function configClickHandlers() {
         $('.btn-features').on('click', goTo('.section-features'));
@@ -30,4 +31,26 @@ $(function () {
             offset: '60px'
         });
     };
+    
+    function addAnimations() {
+        var offset = {
+            offset: '60%'
+        };
+        
+        $('.fade-in-animation').waypoint(function() {
+            $('.fade-in-animation').addClass('animated fadeIn');
+        }, offset);
+        
+        $('.fade-in-up-animation').waypoint(function() {
+            $('.fade-in-up-animation').addClass('animated fadeInUp');
+        }, offset);
+        
+        $('.pulse-animation').waypoint(function() {
+            $('.pulse-animation').addClass('animated pulse');
+        }, offset);
+        
+        $('.slide-in-up-animation').waypoint(function() {
+            $('.slide-in-up-animation').addClass('animated slideInUp');
+        }, offset);
+    }
 });

@@ -559,3 +559,15 @@ footer p {
 .sticky .logo-black {
     display: block;
 }
+
+.fade-in-animation,
+.fade-in-up-animation,
+.slide-in-up-animation {
+    opacity: 0;
+}
+
+.fade-in-animation.animated,
+.fade-in-up-animation.animated,
+.slide-in-up-animation.animated {
+    opacity: 1;
+}
