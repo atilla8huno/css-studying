@@ -1,439 +1,450 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="DevSchool is the world's largest destination for online courses. Discover an online course on Udemy.com and start learning a new skill today.">
-        
-        <link rel="apple-touch-icon" sizes="180x180" href="/resources/img/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/resources/img/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/resources/img/favicon-16x16.png">
-        <link rel="manifest" href="/resources/img/manifest.json">
-        <link rel="mask-icon" href="/resources/img/safari-pinned-tab.svg" color="#5bbad5">
-        <link rel="shortcut icon" href="/resources/img/favicon.ico">
-        <meta name="msapplication-config" content="/resources/img/browserconfig.xml">
-        <meta name="theme-color" content="#ffffff">
-        
-        <link href="https://fonts.googleapis.com/css?family=Ubuntu:100,200,300,400,300italic" rel="stylesheet">
 
-        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DevSchool is the world's largest destination for online courses. Discover an online course on Udemy.com and start learning a new skill today.">
 
-        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/resources/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/resources/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resources/img/favicon-16x16.png">
+    <link rel="manifest" href="/resources/img/manifest.json">
+    <link rel="mask-icon" href="/resources/img/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/resources/img/favicon.ico">
+    <meta name="msapplication-config" content="/resources/img/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 
-        <title>DevSchool</title>
-    </head>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:100,200,300,400,300italic" rel="stylesheet">
 
-    <body>
-        <header>
-            <nav>
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+
+    <title>DevSchool</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="row">
+                <img src="resources/img/logo.png" alt="DevSchool Logo" class="logo">
+                <img src="resources/img/logo.png" alt="DevSchool Logo" class="logo-black">
+                <ul class="main-nav">
+                    <li><a href="javascript:;" class="btn-features">Trilha frontend</a></li>
+                    <li><a href="javascript:;" class="btn-courses">Trilha backend</a></li>
+                    <li><a href="javascript:;" class="btn-steps">Trilha Infra</a></li>
+                    <li><a href="javascript:;" class="btn-plans">Trilha DevOps</a></li>
+                </ul>
+                <a class="mobile-nav-icon"><i class="ion-navicon-round"></i> </a>
+            </div>
+        </nav>
+
+        <div class="hero-text-box">
+            <h1>Goodbye long reading. <br>Hello practical courses.</h1>
+            <a class="btn btn-primary btn-plans" href="#">Start learning</a>
+            <a class="btn btn-default btn-features" href="#">Show me more</a>
+        </div>
+    </header>
+
+    <section class="section-features" id="features">
+        <div class="row">
+            <h2>Some main title here</h2>
+            <p class="long-copy">Some description with a lot of words here. Some description with a lot of words here. Some description with a lot of words here. Some description with a lot of words here. </p>
+        </div>
+
+        <div class="row fade-in-animation">
+            <div class="col span-1-of-4 box">
+                <i class="ion-university icon-big"></i>
+                <h3>Some smaller title</h3>
+                <p>Some smaller description here. Some smaller description here. Some smaller description here. Some smaller description here. </p>
+            </div>
+
+            <div class="col span-1-of-4 box">
+                <i class="ion-ribbon-b icon-big"></i>
+                <h3>Some smaller title</h3>
+                <p>Some smaller description here. Some smaller description here. Some smaller description here. Some smaller description here. </p>
+            </div>
+
+            <div class="col span-1-of-4 box">
+                <i class="ion-ribbon-a icon-big"></i>
+                <h3>Some smaller title</h3>
+                <p>Some smaller description here. Some smaller description here. Some smaller description here. Some smaller description here. </p>
+            </div>
+
+            <div class="col span-1-of-4 box">
+                <i class="ion-trophy icon-big"></i>
+                <h3>Some smaller title</h3>
+                <p>Some smaller description here. Some smaller description here. Some smaller description here. Some smaller description here. </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-courses" id="courses">
+        <ul class="courses-showcase clearfix">
+            <li>
+                <figure class="course-photo">
+                    <img src="resources/img/c1.jpg" alt="Docker">
+                </figure>
+            </li>
+            <li>
+                <figure class="course-photo">
+                    <img src="resources/img/c2.jpg" alt="Java">
+                </figure>
+            </li>
+            <li>
+                <figure class="course-photo">
+                    <img src="resources/img/c3.jpg" alt="Ruby on Rails">
+                </figure>
+            </li>
+            <li>
+                <figure class="course-photo">
+                    <img src="resources/img/c4.png" alt="Python">
+                </figure>
+            </li>
+        </ul>
+        <ul class="courses-showcase clearfix">
+            <li>
+                <figure class="course-photo">
+                    <img src="resources/img/c5.png" alt="Node.js">
+                </figure>
+            </li>
+            <li>
+                <figure class="course-photo">
+                    <img src="resources/img/c6.png" alt="JavaScript 2017">
+                </figure>
+            </li>
+            <li>
+                <figure class="course-photo">
+                    <img src="resources/img/c7.png" alt="CSS 3">
+                </figure>
+            </li>
+            <li>
+                <figure class="course-photo">
+                    <img src="resources/img/c8.png" alt="HTML 5">
+                </figure>
+            </li>
+        </ul>
+    </section>
+
+    <section class="section-steps" id="steps">
+        <div class="row">
+            <h2>How it works &mdash; Simple as 1, 2, 3</h2>
+        </div>
+
+        <div class="row">
+            <div class="col span-1-of-2 steps-box">
+                <img src="resources/img/app-iPhone.png" alt="DevSchool App" class="app-screen fade-in-up-animation">
+            </div>
+            <div class="col span-1-of-2 steps-box">
+                <div class="works-step">
+                    <div>1</div>
+                    <p>Some small description here, some small description here.</p>
+                </div>
+                <div class="works-step">
+                    <div>2</div>
+                    <p>Some small description here, some small description here!</p>
+                </div>
+                <div class="works-step">
+                    <div>3</div>
+                    <p>Some small description here, some small description here?</p>
+                </div>
+
+                <a href="#" class="btn-app"><img src="resources/img/appstore.png" alt="App Store"></a>
+                <a href="#" class="btn-app"><img src="resources/img/googleplay.png" alt="Play Store"></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-cities" id="cities">
+        <div class="row">
+            <h2>We're currently in these cities</h2>
+        </div>
+
+        <div class="row slide-in-up-animation">
+            <div class="col span-1-of-4 box">
+                <img src="resources/img/city-1.jpg" alt="Goiânia">
+                <h3>Goiânia</h3>
+
+                <div class="city-feature">
+                    <i class="ion-ios-person icon-small"></i> 1600+ students
+                </div>
+                <div class="city-feature">
+                    <i class="ion-ios-star icon-small"></i> 45+ top teachers
+                </div>
+                <div class="city-feature">
+                    <i class="ion-social-twitter icon-small"></i>
+                    <a href="#">@devschool_gyn</a>
+                </div>
+            </div>
+
+            <div class="col span-1-of-4 box">
+                <img src="resources/img/city-2.jpg" alt="Rio de Janeiro">
+                <h3>Rio de Janeiro</h3>
+
+                <div class="city-feature">
+                    <i class="ion-ios-person icon-small"></i> 2200+ students
+                </div>
+                <div class="city-feature">
+                    <i class="ion-ios-star icon-small"></i> 40+ top teachers
+                </div>
+                <div class="city-feature">
+                    <i class="ion-social-twitter icon-small"></i>
+                    <a href="#">@devschool_rio</a>
+                </div>
+            </div>
+
+            <div class="col span-1-of-4 box">
+                <img src="resources/img/city-3.jpg" alt="Belo Horizonte">
+                <h3>Belo Horizonte</h3>
+
+                <div class="city-feature">
+                    <i class="ion-ios-person icon-small"></i> 1200+ students
+                </div>
+                <div class="city-feature">
+                    <i class="ion-ios-star icon-small"></i> 25+ top teachers
+                </div>
+                <div class="city-feature">
+                    <i class="ion-social-twitter icon-small"></i>
+                    <a href="#">@devschool_bh</a>
+                </div>
+            </div>
+
+            <div class="col span-1-of-4 box">
+                <img src="resources/img/city-4.jpg" alt="Sāo Paulo">
+                <h3>Sāo Paulo</h3>
+
+                <div class="city-feature">
+                    <i class="ion-ios-person icon-small"></i> 4800+ students
+                </div>
+                <div class="city-feature">
+                    <i class="ion-ios-star icon-small"></i> 60+ top teachers
+                </div>
+                <div class="city-feature">
+                    <i class="ion-social-twitter icon-small"></i>
+                    <a href="#">@devschool_sp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-comments" id="comments">
+        <div class="row">
+            <h2>Our customers can't live without us</h2>
+        </div>
+
+        <div class="row">
+            <div class="col span-1-of-3">
+                <blockquote>
+                    Some small description here, some small description here. Some small description here, some small description here. Some small description here, some small description here.
+                    <cite><img src="resources/img/customer-1.jpg" alt="Einstein">Albert Einstein</cite>
+                </blockquote>
+            </div>
+            <div class="col span-1-of-3">
+                <blockquote>
+                    Some small description here, some small description here. Some small description here, some small description here. Some small description here, some small description here.
+                    <cite><img src="resources/img/customer-2.jpg" alt="Newton">Isaac Newton</cite>
+                </blockquote>
+            </div>
+            <div class="col span-1-of-3">
+                <blockquote>
+                    Some small description here, some small description here. Some small description here, some small description here. Some small description here, some small description here.
+                    <cite><img src="resources/img/customer-3.jpg" alt="Darwin">Charles Darwin</cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-plans" id="plans">
+        <div class="row">
+            <h2>Start studying right now</h2>
+        </div>
+
+        <div class="row">
+            <div class="col span-1-of-3 pulse-animation">
+                <div class="plan-box">
+                    <div>
+                        <h3>Premium</h3>
+                        <p class="plan-price">$399 <span>/ month</span></p>
+                        <p class="plan-price-course">That's only 13.30$ per course</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><i class="ion-ios-checkmark-empty icon-small"></i>1 course every day</li>
+                            <li><i class="ion-ios-checkmark-empty icon-small"></i>Available 24/7</li>
+                            <li><i class="ion-ios-checkmark-empty icon-small"></i>Access to newest content</li>
+                            <li><i class="ion-ios-checkmark-empty icon-small"></i>Free support</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-primary">Sign up now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-3">
+                <div class="plan-box">
+                    <div>
+                        <h3>Pro</h3>
+                        <p class="plan-price">$149 <span>/ month</span></p>
+                        <p class="plan-price-course">That's only 14.90$ per course</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><i class="ion-ios-checkmark-empty icon-small"></i>1 course 10 days/month</li>
+                            <li><i class="ion-ios-checkmark-empty icon-small"></i>Available 24/7</li>
+                            <li><i class="ion-ios-checkmark-empty icon-small"></i>Access to newest content</li>
+                            <li><i class="ion-ios-checkmark-empty icon-small"></i>Free support</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-default">Sign up now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-3">
+                <div class="plan-box">
+                    <div>
+                        <h3>Starter</h3>
+                        <p class="plan-price">$19 <span>/ course</span></p>
+                        <p class="plan-price-course">&nbsp;</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><i class="ion-ios-checkmark-empty icon-small"></i>1 course</li>
+                            <li><i class="ion-ios-checkmark-empty icon-small"></i>Access from 8 am to 12 pm</li>
+                            <li><i class="ion-ios-close-empty icon-small"></i>Access to newest content</li>
+                            <li><i class="ion-ios-close-empty icon-small"></i>Free support</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-default">Sign up now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-form" id="form">
+        <div class="row">
+            <h2>We're happy to hear from you</h2>
+        </div>
+
+        <div class="row">
+            <form method="post" action="#" class="contact-form">
                 <div class="row">
-                    <img src="resources/img/logo.png" alt="DevSchool Logo" class="logo">
-                    <img src="resources/img/logo.png" alt="DevSchool Logo" class="logo-black">
-                    <ul class="main-nav">
-                        <li><a href="javascript:;" class="btn-features">Trilha frontend</a></li>
-                        <li><a href="javascript:;" class="btn-courses">Trilha backend</a></li>
-                        <li><a href="javascript:;" class="btn-steps">Trilha Infra</a></li>
-                        <li><a href="javascript:;" class="btn-plans">Trilha DevOps</a></li>
-                    </ul>
-                    <a class="mobile-nav-icon"><i class="ion-navicon-round"></i> </a>
-                </div>
-            </nav>
-            
-            <div class="hero-text-box">
-                <h1>Goodbye long reading. <br>Hello practical courses.</h1>
-                <a class="btn btn-primary btn-plans" href="#">Start learning</a>
-                <a class="btn btn-default btn-features" href="#">Show me more</a>
-            </div>
-        </header>
-
-        <section class="section-features" id="features">
-            <div class="row">
-                <h2>Some main title here</h2>
-                <p class="long-copy">Some description with a lot of words here. Some description with a lot of words here. Some description with a lot of words here. Some description with a lot of words here. </p>
-            </div>
-
-            <div class="row fade-in-animation">
-                <div class="col span-1-of-4 box">
-                    <i class="ion-university icon-big"></i>
-                    <h3>Some smaller title</h3>
-                    <p>Some smaller description here. Some smaller description here. Some smaller description here. Some smaller description here. </p>
-                </div>
-
-                <div class="col span-1-of-4 box">
-                    <i class="ion-ribbon-b icon-big"></i>
-                    <h3>Some smaller title</h3>
-                    <p>Some smaller description here. Some smaller description here. Some smaller description here. Some smaller description here. </p>
-                </div>
-
-                <div class="col span-1-of-4 box">
-                    <i class="ion-ribbon-a icon-big"></i>
-                    <h3>Some smaller title</h3>
-                    <p>Some smaller description here. Some smaller description here. Some smaller description here. Some smaller description here. </p>
-                </div>
-
-                <div class="col span-1-of-4 box">
-                    <i class="ion-trophy icon-big"></i>
-                    <h3>Some smaller title</h3>
-                    <p>Some smaller description here. Some smaller description here. Some smaller description here. Some smaller description here. </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-courses" id="courses">
-            <ul class="courses-showcase clearfix">
-                <li>
-                    <figure class="course-photo">
-                        <img src="resources/img/c1.jpg" alt="Docker">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="course-photo">
-                        <img src="resources/img/c2.jpg" alt="Java">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="course-photo">
-                        <img src="resources/img/c3.jpg" alt="Ruby on Rails">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="course-photo">
-                        <img src="resources/img/c4.png" alt="Python">
-                    </figure>
-                </li>
-            </ul>
-            <ul class="courses-showcase clearfix">
-                <li>
-                    <figure class="course-photo">
-                        <img src="resources/img/c5.png" alt="Node.js">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="course-photo">
-                        <img src="resources/img/c6.png" alt="JavaScript 2017">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="course-photo">
-                        <img src="resources/img/c7.png" alt="CSS 3">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="course-photo">
-                        <img src="resources/img/c8.png" alt="HTML 5">
-                    </figure>
-                </li>
-            </ul>
-        </section>
-
-        <section class="section-steps" id="steps">
-            <div class="row">
-                <h2>How it works &mdash; Simple as 1, 2, 3</h2>
-            </div>
-
-            <div class="row">
-                <div class="col span-1-of-2 steps-box">
-                    <img src="resources/img/app-iPhone.png" alt="DevSchool App" class="app-screen fade-in-up-animation">
-                </div>
-                <div class="col span-1-of-2 steps-box">
-                    <div class="works-step">
-                        <div>1</div>
-                        <p>Some small description here, some small description here.</p>
+                    <div class="col span-1-of-3">
+                        <label for="name">Name</label>
                     </div>
-                    <div class="works-step">
-                        <div>2</div>
-                        <p>Some small description here, some small description here!</p>
-                    </div>
-                    <div class="works-step">
-                        <div>3</div>
-                        <p>Some small description here, some small description here?</p>
-                    </div>
-
-                    <a href="#" class="btn-app"><img src="resources/img/appstore.png" alt="App Store"></a>
-                    <a href="#" class="btn-app"><img src="resources/img/googleplay.png" alt="Play Store"></a>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-cities" id="cities">
-            <div class="row">
-                <h2>We're currently in these cities</h2>
-            </div>
-
-            <div class="row slide-in-up-animation">
-                <div class="col span-1-of-4 box">
-                    <img src="resources/img/city-1.jpg" alt="Goiânia">
-                    <h3>Goiânia</h3>
-
-                    <div class="city-feature">
-                        <i class="ion-ios-person icon-small"></i>
-                        1600+ students
-                    </div>
-                    <div class="city-feature">
-                        <i class="ion-ios-star icon-small"></i>
-                        45+ top teachers
-                    </div>
-                    <div class="city-feature">
-                        <i class="ion-social-twitter icon-small"></i>
-                        <a href="#">@devschool_gyn</a>
+                    <div class="col span-2-of-3">
+                        <input type="text" name="name" id="name" placeholder="Your name" required>
                     </div>
                 </div>
-
-                <div class="col span-1-of-4 box">
-                    <img src="resources/img/city-2.jpg" alt="Rio de Janeiro">
-                    <h3>Rio de Janeiro</h3>
-
-                    <div class="city-feature">
-                        <i class="ion-ios-person icon-small"></i>
-                        2200+ students
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="email">E-mail</label>
                     </div>
-                    <div class="city-feature">
-                        <i class="ion-ios-star icon-small"></i>
-                        40+ top teachers
-                    </div>
-                    <div class="city-feature">
-                        <i class="ion-social-twitter icon-small"></i>
-                        <a href="#">@devschool_rio</a>
+                    <div class="col span-2-of-3">
+                        <input type="email" name="email" id="email" placeholder="Your e-mail" required>
                     </div>
                 </div>
-
-                <div class="col span-1-of-4 box">
-                    <img src="resources/img/city-3.jpg" alt="Belo Horizonte">
-                    <h3>Belo Horizonte</h3>
-
-                    <div class="city-feature">
-                        <i class="ion-ios-person icon-small"></i>
-                        1200+ students
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="find-us">How did you find us?</label>
                     </div>
-                    <div class="city-feature">
-                        <i class="ion-ios-star icon-small"></i>
-                        25+ top teachers
-                    </div>
-                    <div class="city-feature">
-                        <i class="ion-social-twitter icon-small"></i>
-                        <a href="#">@devschool_bh</a>
-                    </div>
-                </div>
-
-                <div class="col span-1-of-4 box">
-                    <img src="resources/img/city-4.jpg" alt="Sāo Paulo">
-                    <h3>Sāo Paulo</h3>
-
-                    <div class="city-feature">
-                        <i class="ion-ios-person icon-small"></i>
-                        4800+ students
-                    </div>
-                    <div class="city-feature">
-                        <i class="ion-ios-star icon-small"></i>
-                        60+ top teachers
-                    </div>
-                    <div class="city-feature">
-                        <i class="ion-social-twitter icon-small"></i>
-                        <a href="#">@devschool_sp</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section class="section-comments" id="comments">
-            <div class="row">
-                <h2>Our customers can't live without us</h2>
-            </div>
-            
-            <div class="row">
-                <div class="col span-1-of-3">
-                    <blockquote>
-                        Some small description here, some small description here. Some small description here, some small description here. Some small description here, some small description here.
-                        <cite><img src="resources/img/customer-1.jpg" alt="Einstein">Albert Einstein</cite>
-                    </blockquote>
-                </div>
-                <div class="col span-1-of-3">
-                    <blockquote>
-                        Some small description here, some small description here. Some small description here, some small description here. Some small description here, some small description here.
-                        <cite><img src="resources/img/customer-2.jpg" alt="Newton">Isaac Newton</cite>
-                    </blockquote>
-                </div>
-                <div class="col span-1-of-3">
-                    <blockquote>
-                        Some small description here, some small description here. Some small description here, some small description here. Some small description here, some small description here.
-                        <cite><img src="resources/img/customer-3.jpg" alt="Darwin">Charles Darwin</cite>
-                    </blockquote>
-                </div>
-            </div>
-        </section>
-        
-        <section class="section-plans" id="plans">
-            <div class="row">
-                <h2>Start studying right now</h2>
-            </div>
-            
-            <div class="row">
-                <div class="col span-1-of-3 pulse-animation">
-                    <div class="plan-box">
-                        <div>
-                            <h3>Premium</h3>
-                            <p class="plan-price">$399 <span>/ month</span></p>
-                            <p class="plan-price-course">That's only 13.30$ per course</p>
-                        </div>
-                        <div>
-                            <ul>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>1 course every day</li>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Available 24/7</li>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Access to newest content</li>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Free support</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <a href="#" class="btn btn-primary">Sign up now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col span-1-of-3">
-                    <div class="plan-box">
-                        <div>
-                            <h3>Pro</h3>
-                            <p class="plan-price">$149 <span>/ month</span></p>
-                            <p class="plan-price-course">That's only 14.90$ per course</p>
-                        </div>
-                        <div>
-                            <ul>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>1 course 10 days/month</li>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Available 24/7</li>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Access to newest content</li>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Free support</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <a href="#" class="btn btn-default">Sign up now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col span-1-of-3">
-                    <div class="plan-box">
-                        <div>
-                            <h3>Starter</h3>
-                            <p class="plan-price">$19 <span>/ course</span></p>
-                            <p class="plan-price-course">&nbsp;</p>
-                        </div>
-                        <div>
-                            <ul>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>1 course</li>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Access from 8 am to 12 pm</li>
-                                <li><i class="ion-ios-close-empty icon-small"></i>Access to newest content</li>
-                                <li><i class="ion-ios-close-empty icon-small"></i>Free support</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <a href="#" class="btn btn-default">Sign up now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section class="section-form" id="form">
-            <div class="row">
-                <h2>We're happy to hear from you</h2>
-            </div>
-            
-            <div class="row">
-                <form method="post" action="#" class="contact-form">
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label for="name">Name</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="text" name="name" id="name" placeholder="Your name" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label for="email">E-mail</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="email" name="email" id="email" placeholder="Your e-mail" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label for="find-us">How did you find us?</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <select name="find-us" id="find-us">
+                    <div class="col span-2-of-3">
+                        <select name="find-us" id="find-us">
                                 <option value="friends" selected>Friends</option>
                                 <option value="facebook">Facebook</option>
                                 <option value="google">Google</option>
                                 <option value="other">Other</option>
                             </select>
-                        </div>
                     </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label for="news">Newsletter?</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="checkbox" name="news" id="news" checked> Yes, please
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label for="message">Drop us a line</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <textarea name="message" id="message" placeholder="Your message"></textarea> 
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>&nbsp;</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="submit" value="Send it!">
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </section>
-        
-        <footer>
-            <div class="row">
-                <div class="col span-1-of-2">
-                    <ul class="footer-nav">
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Press</a></li>
-                        <li><a href="#">iOS App</a></li>
-                        <li><a href="#">Android App</a></li>
-                    </ul>
                 </div>
-                <div class="col span-1-of-2">
-                    <ul class="social-links">
-                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
-                        <li><a href="#"><i class="ion-social-youtube"></i></a></li>
-                    </ul>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="news">Newsletter?</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="checkbox" name="news" id="news" checked> Yes, please
+                    </div>
                 </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="message">Drop us a line</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <textarea name="message" id="message" placeholder="Your message"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="submit" value="Send it!">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+                <ul class="footer-nav">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">iOS App</a></li>
+                    <li><a href="#">Android App</a></li>
+                </ul>
             </div>
-            
-            <div class="row">
-                <p>
-                    Copyright &copy; 2017 by DevSchool. All rights reserved.
-                </p>
+            <div class="col span-1-of-2">
+                <ul class="social-links">
+                    <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                    <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                    <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                    <li><a href="#"><i class="ion-social-youtube"></i></a></li>
+                </ul>
             </div>
-        </footer>
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
-        <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
-        <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
-        <script src="vendors/js/jquery.waypoints.min.js"></script>
-        
-        <script src="resources/js/scripts.js"></script>
-    </body>
+        </div>
+
+        <div class="row">
+            <p>
+                Copyright &copy; 2017 by DevSchool. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+
+    <script src="resources/js/scripts.js"></script>
+
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-104889668-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+
 </html>
