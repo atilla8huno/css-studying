@@ -463,6 +463,14 @@ input[type=checkbox] {
     margin: 10px 5px 10px 0;
 }
 
+/**
+ * future feature
+.map {
+    width: 100%;
+    height: auto;
+}
+*/
+
 *:focus {
     outline: none;
 }

@@ -1,8 +1,46 @@
 $(function () {
-    showOrHideMenu();
-    configClickHandlers();
-    addAnimations();
-    addNavigation();
+    init();
+    
+    function init() {
+        showOrHideMenu();
+        configClickHandlers();
+        addAnimations();
+        addNavigation();
+        //initMap();
+    }
+    
+    /**
+     * Future feature - Using google maps behind the form contact for each city we are in.
+     */
+    function initMap() {
+        var city = getLatLngFrom('gyn');
+        city.el = '.map';
+        
+        new GMaps(city);
+    }
+    
+    function getLatLngFrom(city) {
+        var cities = {
+            gyn: {
+                lat: -16.6958288,
+                lng: -49.4443563
+            },
+            rio: {
+                lat: -22.913885,
+                lng: -43.7261845
+            },
+            bh: {
+                lat: -19.9026615,
+                lng: -44.1041388
+            },
+            sp: {
+                lat: -23.6821604,
+                lng: -46.8755013
+            }
+        };
+        
+        return cities[city] ? cities[city] : cities['gyn'];
+    }
     
     function configClickHandlers() {
         $('.btn-features').on('click', goTo('.section-features'));
